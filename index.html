@@ -4,7 +4,8 @@
     <title>Christian Andrie G. Asne - Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onload="showDate()">
 
 <nav>
     <a href="index.html">Resume</a>
@@ -12,6 +13,9 @@
 </nav>
 
 <div class="resume">
+
+    <button onclick="showWelcome()">Welcome</button>
+    <p id="date"></p>
 
     <div class="header">
         <div class="photo">
@@ -37,7 +41,8 @@
     </ul>
 
     <h2>Skills</h2>
-    <ul>
+    <button onclick="toggleSkills()">Show/Hide Skills</button>
+    <ul id="skills">
         <li>C Programming</li>
         <li>HTML and CSS</li>
         <li>Arduino and Microcontrollers</li>
@@ -66,5 +71,6 @@
 
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
